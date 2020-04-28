@@ -410,7 +410,6 @@ function ChildReconciler(shouldTrackSideEffects) {
     if (
       current === null ||
       current.tag !== HostPortal ||
-      current.stateNode.containerInfo !== portal.containerInfo ||
       current.stateNode.implementation !== portal.implementation
     ) {
       // Insert
